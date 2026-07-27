@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syok Syabu Syabu — Halal Hotpot Meats, Sauces &amp; Condiments</title>
+<meta name="description" content="Premium shabu shabu meat cuts, signature sauces, and condiments — 100% Halal-certified, prepped fresh, delivered to your pot.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231A1512'/%3E%3Cpath d='M30 60 Q50 75 70 60 L66 68 Q50 78 34 68 Z' fill='%23C79A4B'/%3E%3Cpath d='M40 30 Q36 40 42 46 Q38 50 42 56' stroke='%23C79A4B' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M54 30 Q50 40 56 46 Q52 50 56 56' stroke='%23C79A4B' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Work+Sans:wght@400;500;600;700&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="#home" class="navbar__logo">
+      <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="48" fill="var(--charcoal)"/>
+        <path d="M30 60 Q50 75 70 60 L66 68 Q50 78 34 68 Z" fill="var(--broth-gold)"/>
+        <path d="M40 30 Q36 40 42 46 Q38 50 42 56" stroke="var(--broth-gold)" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M54 30 Q50 40 56 46 Q52 50 56 56" stroke="var(--broth-gold)" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">Syok <em>Syabu Syabu</em></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#about" data-i18n="nav.about">About Us</a>
+      <a href="#products" data-i18n="nav.products">Menu</a>
+      <a href="#payment" data-i18n="nav.payment">Payment</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <div class="lang-switch">
+        <button class="lang-switch__btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm7.93 9h-3.17a15.6 15.6 0 0 0-1.2-5.44A8.02 8.02 0 0 1 19.93 11ZM12 4.06c.9 1.2 1.98 3.24 2.27 6.94H9.73C10.02 7.3 11.1 5.26 12 4.06ZM9.73 13h4.54c-.29 3.7-1.37 5.74-2.27 6.94-.9-1.2-1.98-3.24-2.27-6.94Zm-2.29-2H4.07a8.02 8.02 0 0 1 4.44-5.44A15.6 15.6 0 0 0 7.44 11Zm0 2a15.6 15.6 0 0 0 1.2 5.44A8.02 8.02 0 0 1 4.07 13h3.37Zm9.09 5.44a15.6 15.6 0 0 0 1.2-5.44h3.17a8.02 8.02 0 0 1-4.37 5.44Z"/></svg>
+          <span id="langLabel">EN</span>
+        </button>
+        <ul class="lang-switch__menu" id="langMenu" role="listbox">
+          <li role="option" data-lang="en" aria-selected="true">English</li>
+          <li role="option" data-lang="ms" aria-selected="false">Bahasa Malaysia</li>
+        </ul>
+      </div>
+
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="M7 4h-2l-1 2v1h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h11v-2h-11l1.1-2h6.45c.75 0 1.41-.41 1.75-1.03l3.58-6.47a1 1 0 0 0-.87-1.5h-13.9l-.94-2zm2 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm9 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero__steam" aria-hidden="true">
+      <span class="wisp wisp--1"></span>
+      <span class="wisp wisp--2"></span>
+      <span class="wisp wisp--3"></span>
+      <span class="wisp wisp--4"></span>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Halal-Certified Hotpot Specialist</p>
+        <h1 class="hero__title" data-i18n="hero.title">Sedap. Steaming. Syok.</h1>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">Premium shabu shabu meats, signature sauces, and condiments — Halal-certified, prepped fresh, and delivered ready for your pot.</p>
+        <div class="hero__ctas">
+          <a href="#products" class="btn btn--primary" data-i18n="hero.ctaPrimary">Explore Our Menu</a>
+          <a href="#about" class="btn btn--ghost" data-i18n="hero.ctaSecondary">Our Halal Promise</a>
+        </div>
+      </div>
+
+      <div class="hero__stamp" aria-hidden="true">
+        <svg viewBox="0 0 200 200" class="stamp">
+          <defs>
+            <path id="arcTop" d="M 24 106 A 76 76 0 0 1 176 106"/>
+            <path id="arcBottom" d="M 24 106 A 76 76 0 0 0 176 106"/>
+          </defs>
+          <circle cx="100" cy="100" r="92" class="stamp__ring stamp__ring--outer"/>
+          <circle cx="100" cy="100" r="78" class="stamp__ring stamp__ring--inner"/>
+          <text class="stamp__text">
+            <textPath href="#arcTop" startOffset="50%" text-anchor="middle">✦ HALAL CERTIFIED ✦ HALAL CERTIFIED</textPath>
+          </text>
+          <text class="stamp__text">
+            <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">✦ 100% SYOK GUARANTEE ✦</textPath>
+          </text>
+          <g class="stamp__icon" transform="translate(100,100)">
+            <path d="M-24 8 Q0 26 24 8 L20 16 Q0 30 -20 16 Z"/>
+            <path d="M-10 -22 Q-14 -12 -8 -6 Q-12 -2 -8 4" fill="none"/>
+            <path d="M8 -22 Q4 -12 10 -6 Q6 -2 10 4" fill="none"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-hidden="true"><span></span></a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about">
+    <div class="container about__grid">
+      <div class="about__story reveal">
+        <p class="eyebrow" data-i18n="about.eyebrow">Our Story</p>
+        <h2 data-i18n="about.title">Why We're Syok</h2>
+        <p data-i18n="about.body">Syok Syabu Syabu started with one simple idea: hotpot night should feel effortless and always Syok. Every cut of meat, every sauce, and every condiment we sell is sourced exclusively from Halal-certified suppliers, prepped in small batches, and packed the same day it ships — so your pot tastes like it came straight from a proper steamboat restaurant, at home.</p>
+      </div>
+
+      <div class="about__seal reveal" aria-hidden="true">
+        <svg viewBox="0 0 200 200" class="stamp stamp--ghost">
+          <use href="#arcTop"/>
+          <circle cx="100" cy="100" r="92" class="stamp__ring stamp__ring--outer"/>
+          <circle cx="100" cy="100" r="78" class="stamp__ring stamp__ring--inner"/>
+          <text class="stamp__text"><textPath href="#arcTop" startOffset="50%" text-anchor="middle">✦ SOURCED WITH CARE ✦</textPath></text>
+          <text class="stamp__text"><textPath href="#arcBottom" startOffset="50%" text-anchor="middle">✦ PREPPED FRESH DAILY ✦</textPath></text>
+          <g class="stamp__icon" transform="translate(100,100)">
+            <path d="M-24 8 Q0 26 24 8 L20 16 Q0 30 -20 16 Z"/>
+            <path d="M-10 -22 Q-14 -12 -8 -6 Q-12 -2 -8 4" fill="none"/>
+            <path d="M8 -22 Q4 -12 10 -6 Q6 -2 10 4" fill="none"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="container">
+      <ol class="process">
+        <li class="process__step reveal">
+          <span class="process__num">01</span>
+          <h3 data-i18n="about.step1Title">Sourced from Halal Farms</h3>
+          <p data-i18n="about.step1Body">Every supplier is certified and audited before we work with them.</p>
+        </li>
+        <li class="process__step reveal">
+          <span class="process__num">02</span>
+          <h3 data-i18n="about.step2Title">Prepped Fresh Daily</h3>
+          <p data-i18n="about.step2Body">Sliced, portioned, and packed in small batches — never frozen for months.</p>
+        </li>
+        <li class="process__step reveal">
+          <span class="process__num">03</span>
+          <h3 data-i18n="about.step3Title">Delivered to Your Pot</h3>
+          <p data-i18n="about.step3Body">Chilled delivery straight to your door, ready when hotpot night is.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section id="products" class="products">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="products.eyebrow">Fresh &amp; Ready</p>
+        <h2 data-i18n="products.title">Our Menu</h2>
+        <p data-i18n="products.subtitle">Everything you need for the perfect pot, priced per pack.</p>
+      </div>
+
+      <div class="filter-tabs reveal" id="filterTabs" role="tablist">
+        <button role="tab" aria-selected="true" data-filter="all" class="is-active" data-i18n="products.filterAll">All</button>
+        <button role="tab" aria-selected="false" data-filter="meats" data-i18n="products.filterMeats">Meats</button>
+        <button role="tab" aria-selected="false" data-filter="sauces" data-i18n="products.filterSauces">Sauces</button>
+        <button role="tab" aria-selected="false" data-filter="condiments" data-i18n="products.filterCondiments">Condiments</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ PAYMENT ============ -->
+  <section id="payment" class="payment">
+    <div class="container">
+      <div class="section-head section-head--light reveal">
+        <p class="eyebrow" data-i18n="payment.eyebrow">Checkout</p>
+        <h2 data-i18n="payment.title">Easy, Secure Payment</h2>
+        <p data-i18n="payment.subtitle">Pay however suits you — every order is protected.</p>
+      </div>
+
+      <div class="payment-grid reveal">
+        <div class="payment-card">
+          <svg viewBox="0 0 48 48" class="icon icon--lg" aria-hidden="true"><rect x="6" y="10" width="36" height="26" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M6 18h36" stroke="currentColor" stroke-width="2.5"/><path d="M13 27h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <h3 data-i18n="payment.fpxTitle">FPX Online Banking</h3>
+          <p data-i18n="payment.fpxBody">Pay directly from any Malaysian bank account.</p>
+        </div>
+        <div class="payment-card">
+          <svg viewBox="0 0 48 48" class="icon icon--lg" aria-hidden="true"><rect x="7" y="7" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"/><rect x="29" y="7" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"/><rect x="7" y="29" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"/><rect x="30" y="30" width="4" height="4" fill="currentColor"/><rect x="38" y="30" width="4" height="4" fill="currentColor"/><rect x="30" y="38" width="4" height="4" fill="currentColor"/><rect x="38" y="38" width="4" height="4" fill="currentColor"/></svg>
+          <h3 data-i18n="payment.qrTitle">DuitNow QR</h3>
+          <p data-i18n="payment.qrBody">Scan and pay in seconds with your e-wallet.</p>
+        </div>
+        <div class="payment-card">
+          <svg viewBox="0 0 48 48" class="icon icon--lg" aria-hidden="true"><rect x="5" y="11" width="38" height="26" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M5 19h38" stroke="currentColor" stroke-width="2.5"/></svg>
+          <h3 data-i18n="payment.cardTitle">Credit / Debit Card</h3>
+          <p data-i18n="payment.cardBody">Visa, Mastercard, and all major cards accepted.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact" class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <span class="logo-text logo-text--footer">Syok <em>Syabu Syabu</em></span>
+      <p data-i18n="footer.tagline">Halal-certified hotpot meats, sauces &amp; condiments, delivered.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook" class="social-icon"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.5H16l.5-3H13.5V8.3c0-.87.24-1.46 1.5-1.46H16.6V4.14C16.3 4.1 15.3 4 14.1 4c-2.4 0-4 1.46-4 4.14V10.5H7.5v3H10V21h3.5z"/></svg></a>
+        <a href="#" aria-label="Instagram" class="social-icon"><svg viewBox="0 0 24 24"><path d="M12 8.4a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2zM12 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm4.9-4.6a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8zM12 4c-2.17 0-2.44.01-3.29.05-.85.04-1.43.17-1.94.37a3.9 3.9 0 0 0-1.42.92 3.9 3.9 0 0 0-.92 1.42c-.2.5-.33 1.09-.37 1.94C4.01 9.56 4 9.83 4 12s.01 2.44.05 3.29c.04.85.17 1.43.37 1.94.2.5.48.92.92 1.42.4.4.92.72 1.42.92.51.2 1.09.33 1.94.37.85.04 1.12.05 3.3.05s2.44-.01 3.29-.05c.85-.04 1.43-.17 1.94-.37.5-.2.92-.48 1.42-.92.4-.4.72-.92.92-1.42.2-.51.33-1.09.37-1.94.04-.85.05-1.12.05-3.3s-.01-2.44-.05-3.29c-.04-.85-.17-1.43-.37-1.94a3.9 3.9 0 0 0-.92-1.42 3.9 3.9 0 0 0-1.42-.92c-.51-.2-1.09-.33-1.94-.37C14.44 4.01 14.17 4 12 4z"/></svg></a>
+        <a href="#" aria-label="WhatsApp" class="social-icon"><svg viewBox="0 0 24 24"><path d="M12 4a8 8 0 0 0-6.9 12.02L4 20l4.1-1.07A8 8 0 1 0 12 4zm0 1.6a6.4 6.4 0 0 1 5.44 9.78l-.2.33.34 1.9-1.94-.5-.33.2A6.4 6.4 0 1 1 12 5.6zm-2.9 3.03c-.16 0-.42.06-.64.31-.22.25-.85.83-.85 2.03 0 1.2.87 2.35.99 2.52.12.16 1.7 2.6 4.13 3.55 2.02.79 2.43.63 2.87.59.44-.04 1.41-.57 1.6-1.13.2-.55.2-1.03.14-1.13-.06-.1-.22-.16-.46-.28-.25-.13-1.42-.7-1.64-.78-.22-.08-.38-.13-.54.13-.16.25-.62.78-.76.94-.14.16-.28.18-.53.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.28.37-.42.13-.14.17-.24.25-.4.08-.16.04-.3-.02-.42-.06-.13-.54-1.34-.76-1.83-.2-.47-.4-.4-.55-.41z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer__links">
+      <h4 data-i18n="footer.linksTitle">Quick Links</h4>
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#about" data-i18n="nav.about">About Us</a>
+      <a href="#products" data-i18n="nav.products">Menu</a>
+      <a href="#payment" data-i18n="nav.payment">Payment</a>
+    </div>
+
+    <div class="footer__contact">
+      <h4 data-i18n="footer.contactTitle">Get In Touch</h4>
+      <p>📍 <span data-i18n="footer.address">Kuantan, Pahang, Malaysia</span></p>
+      <p>📞 <span data-i18n="footer.phone">+60 12-345 6789</span></p>
+      <p>✉️ <span data-i18n="footer.email">order@syoksyabusyabu.com</span></p>
+      <p>🕒 <span data-i18n="footer.hours">Every day, 9:00 AM – 9:00 PM</span></p>
+    </div>
+  </div>
+
+  <div class="footer__bottom container">
+    <svg class="footer__mark" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="var(--broth-gold)" opacity="0.15"/><path d="M30 60 Q50 75 70 60 L66 68 Q50 78 34 68 Z" fill="var(--broth-gold)"/></svg>
+    <p data-i18n="footer.copyright">© 2026 Syok Syabu Syabu. All rights reserved.</p>
+    <p class="footer__disclaimer" data-i18n="footer.disclaimer">Menu items and prices shown are for illustration purposes.</p>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+  <div class="cart-drawer__head">
+    <h3 data-i18n="cart.title">Your Order</h3>
+    <button class="cart-drawer__close" id="cartClose" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-drawer__items" id="cartItems"></div>
+  <div class="cart-drawer__foot">
+    <div class="cart-drawer__total">
+      <span data-i18n="cart.total">Total</span>
+      <span id="cartTotal">RM 0.00</span>
+    </div>
+    <a href="#payment" class="btn btn--primary btn--block" id="cartCheckout" data-i18n="cart.checkout">Proceed to Payment</a>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
